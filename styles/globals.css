@@ -13,3 +13,7 @@ html, body {
 * {
   box-sizing: border-box;
 }
+
+section[id] {
+  scroll-margin-top: 6rem;
+}
