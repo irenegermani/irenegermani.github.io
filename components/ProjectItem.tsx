@@ -14,17 +14,19 @@ const ProjectItem = ({ project, index }: ProjectProps): JSX.Element => {
           <div className="mt-4 flex flex-wrap gap-2">
             {project.links
               .filter((link: any) => link.url && link.url.trim() !== "")
-              .map((link: any, idx: number) => (
-                
-                  key={idx}
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-3 py-1 text-sm bg-black text-white rounded hover:bg-gray-800 transition"
-                >
-                  {link.name}
-                </a>
-              ))}
+              .map((link: any, idx: number) => {
+                return (
+                  
+                    key={idx}
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-3 py-1 text-sm bg-black text-white rounded hover:bg-gray-800 transition"
+                  >
+                    {link.name}
+                  </a>
+                );
+              })}
           </div>
         )}
       </div>
