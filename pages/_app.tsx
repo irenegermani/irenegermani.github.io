@@ -23,7 +23,7 @@ const App = ({Component, pageProps}: Readonly<AppProps>): JSX.Element => {
         <meta property="og:type" content="website"/>
       </Head>
       <Layout>
-        <main className="flex flex-col w-full mx-auto leading max-w-4xl px-4 sm:px-5 py-5">
+        <main className="w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
           <Component {...pageProps}/>
         </main>
       </Layout>
