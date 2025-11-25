@@ -1,13 +1,41 @@
-import TeachingItem from "./TeachingItem";
 import data from "./data/teaching.json";
 
-const Teaching = (): JSX.Element => {
+const Teaching = (): JSX.Element | null => {
+  if (!data || data.length === 0) return null;
+
   return (
     <section className="grid gap-6" id="teaching">
       <h2 className="text-xl font-bold mt-12 mb-4">Teaching</h2>
-      <div>
-        {data.map((course, index) => (
-          <TeachingItem course={course} index={index} key={index} />
+      <div className="space-y-6">
+        {data.map((item, index) => (
+          <div key={index} className="border-b border-gray-200 pb-4 last:border-b-0">
+            <div className="flex justify-between items-center mb-2">
+              <p className="font-medium text-lg">
+                {item.role} — {item.university}
+              </p>
+              <span className="text-gray-500">{item.date}</span>
+            </div>
+            <ul className="list-disc list-inside ml-4 space-y-1">
+              {item.courses.map((course, i) => (
+                <li key={i}>{course}</li>
+              ))}
+            </ul>
+            {item.links && item.links.length > 0 && (
+              <div className="mt-2">
+                {item.links.map((link, i) => (
+                  <a
+                    key={i}
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-500 hover:underline mr-4"
+                  >
+                    {link.label || "Link"}
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
         ))}
       </div>
     </section>
@@ -15,4 +43,3 @@ const Teaching = (): JSX.Element => {
 };
 
 export default Teaching;
-

@@ -11,7 +11,7 @@ export default class MyDocument extends Document {
 			<Html lang="en">
 				<Head>
 					<meta charSet="utf-8"/>
-					<meta name="apple-mobile-web-app-capable" content="yes"/>
+					<meta name="apple-mobile-web-app-capable" content="no"/>
 					<link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png"/>
 					<link rel="manifest" href="/site.webmanifest"/>
 				</Head>

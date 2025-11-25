@@ -1,20 +1,30 @@
 [
   {
-    "title": "Guest Lecturer — King’s College London",
+    "role": "Guest Lecturer",
+    "university": "King’s College London",
     "date": "Mar 2024",
-    "description": "- 5SSPP211 Institutions, Economics and Change",
+    "courses": ["5SSPP211 Institutions, Economics and Change"],
     "links": []
   },
   {
-    "title": "Graduate Teaching Assistant — University College London",
+    "role": "Graduate Teaching Assistant",
+    "university": "King's College London",
     "date": "Jan 2022 – Jun 2025",
-    "description": "- 5SSPP241 Statistics for Political Science II\n- 6SSPP373 The Political Economy of Inequality\n- 5SSPP211 Institutions, Economics and Change\n- 5SSPP265 Left‑Right Divide in Advanced Economies\n- 5SSPP230 European Union: Power, Politics and Economics",
+    "courses": [
+      "5SSPP241 Statistics for Political Science II",
+      "6SSPP373 The Political Economy of Inequality",
+      "5SSPP211 Institutions, Economics and Change",
+      "5SSPP265 Left‑Right Divide in Advanced Economies",
+      "5SSPP230 European Union: Power, Politics and Economics"
+    ],
     "links": []
   },
   {
-    "title": "Senior Postgraduate Teaching Assistant — University College London",
+    "role": "Senior Postgraduate Teaching Assistant",
+    "university": "University College London",
     "date": "Sep 2024 – Jan 2025",
-    "description": "- PUBL0055 Introduction to Quantitative Methods (MSc)",
+    "courses": ["PUBL0055 Introduction to Quantitative Methods (MSc)"],
     "links": []
   }
 ]
+
