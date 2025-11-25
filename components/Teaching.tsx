@@ -5,7 +5,7 @@ const Teaching = (): JSX.Element | null => {
 
   return (
     <section className="grid" id="teaching">
-      {/* Wrap the heading in the same max-width container as the cards */}
+      {/* Wrap heading and cards in the same max-width container as projects */}
       <div className="mx-auto lg:w-11/12">
         <h2 className="text-xl font-bold mt-12 mb-4">Teaching</h2>
 
@@ -13,7 +13,7 @@ const Teaching = (): JSX.Element | null => {
           {data.map((item, index) => (
             <div
               key={index}
-              className="shadow-lg mb-8 w-full"
+              className="shadow-lg mb-8 w-full" // full width of container
             >
               <div className="w-full bg-gray-50 p-8 rounded-lg">
                 {/* University and date at the top */}
