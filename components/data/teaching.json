@@ -3,8 +3,7 @@
     "role": "Guest Lecturer",
     "university": "King’s College London",
     "date": "Mar 2024",
-    "courses": ["5SSPP211 Institutions, Economics and Change"],
-    "links": []
+    "courses": ["5SSPP211 Institutions, Economics and Change"]
   },
   {
     "role": "Graduate Teaching Assistant",
@@ -16,15 +15,13 @@
       "5SSPP211 Institutions, Economics and Change",
       "5SSPP265 Left‑Right Divide in Advanced Economies",
       "5SSPP230 European Union: Power, Politics and Economics"
-    ],
-    "links": []
+    ]
   },
   {
     "role": "Senior Postgraduate Teaching Assistant",
     "university": "University College London",
     "date": "Sep 2024 – Jan 2025",
-    "courses": ["PUBL0055 Introduction to Quantitative Methods (MSc)"],
-    "links": []
+    "courses": ["PUBL0055 Introduction to Quantitative Methods (MSc)"]
   }
 ]
 

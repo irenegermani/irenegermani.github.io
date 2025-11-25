@@ -20,21 +20,6 @@ const Teaching = (): JSX.Element | null => {
                 <li key={i}>{course}</li>
               ))}
             </ul>
-            {item.links && item.links.length > 0 && (
-              <div className="mt-2">
-                {item.links.map((link, i) => (
-                  <a
-                    key={i}
-                    href={link.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-500 hover:underline mr-4"
-                  >
-                    {link.label || "Link"}
-                  </a>
-                ))}
-              </div>
-            )}
           </div>
         ))}
       </div>
