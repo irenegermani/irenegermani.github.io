@@ -10,12 +10,7 @@ const Misc: NextPage<unknown> = () => {
         <p className="text-gray-700 leading-relaxed mb-6">
           You can download my CV here.
         </p>
-        
-          href="CV_Germani.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition"
-        >
+        <a href="CV_Germani.pdf" target="_blank" rel="noopener noreferrer" className="inline-block px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition">
           Download CV
         </a>
       </div>
@@ -24,4 +19,3 @@ const Misc: NextPage<unknown> = () => {
 };
 
 export default Misc;
-
