@@ -15,7 +15,7 @@ const About = (): JSX.Element => {
           <h1 className="text-4xl font-bold pb-8 md:pb-0">{personalInfo.name}</h1>
 
           <p>
-            I am a {about?.year || ""} PhD Candidate in{' '}
+            PhD Candidate in{' '}
             {about?.department?.link
               ? <ExtLink href={about.department.link}>{about.department.name}</ExtLink>
               : about?.department?.name || ""
