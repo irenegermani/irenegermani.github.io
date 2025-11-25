@@ -6,8 +6,8 @@ interface TeachingItemProps {
 const TeachingItem = ({ course, index }: TeachingItemProps): JSX.Element => {
   return (
     <div className="w-full">
-      <div className="bg-gray-50 p-6 rounded-lg shadow-lg">
-        <div className="flex justify-between text-gray-500 text-sm mb-2">
+      <div className="bg-gray-50 p-4 sm:p-6 rounded-lg shadow-lg">
+        <div className="flex flex-col sm:flex-row sm:justify-between text-gray-500 text-sm mb-2 gap-1 sm:gap-0">
           <span>{course.university}</span>
           <span>{course.date}</span>
         </div>

@@ -4,17 +4,18 @@ import personalInfo from './data/personalInfo.json';
 
 const About = (): JSX.Element => {
   const { about } = personalInfo;
-
+  
   return (
-    <section className="grid gap-12" id="about">
-      <div className="flex flex-col md:flex-row items-center md:items-start mx-auto w-full max-w-3xl px-4">
-        <div className="mr-0 md:mr-8 mb-6 md:mb-0 rounded-md">
+    <section className="w-full" id="about">
+      <div className="flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-8">
+        <div className="flex-shrink-0">
           <ProfileImage />
         </div>
-        <div className="flex flex-col justify-evenly text-center md:text-left">
-          <h1 className="text-4xl font-bold pb-4 md:pb-0">{personalInfo.name}</h1>
-
-          <p>
+        
+        <div className="flex flex-col justify-center text-center md:text-left">
+          <h1 className="text-3xl sm:text-4xl font-bold mb-4">{personalInfo.name}</h1>
+          
+          <p className="text-gray-700 leading-relaxed">
             PhD Candidate in{' '}
             {about?.department?.link
               ? <ExtLink href={about.department.link}>{about.department.name}</ExtLink>
@@ -26,13 +27,13 @@ const About = (): JSX.Element => {
               : about?.college?.name || ""
             }.
           </p>
-
+          
           {about?.interest && (
-            <p className="text-sm text-gray-600 mt-2">
+            <p className="text-sm text-gray-600 mt-3">
               Research Interests: {about.interest}
             </p>
           )}
-
+          
           <p className="text-sm text-gray-400 mt-4">
             Under construction...<br />
             Re-architecting this site with modern web technologies.
